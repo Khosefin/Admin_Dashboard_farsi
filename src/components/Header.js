@@ -6,10 +6,10 @@ export default function Header() {
   return (
     <div className="flex justify-between items-center pt-2 w-[1300px]">
       <div className="flex items-center">
-        <img src="/img/armin.jpg" alt="armin" className="w-14 rounded-full" />
+        <img src="/img/aryan.jpg" alt="armin" className="w-14 rounded-full" />
         <div className="pr-3">
-          <h1 className="font-kalameB">آرمین شوقی</h1>
-          <h2 className="font-kalameB opacity-50">برنامه نویس فول استک</h2>
+          <h1 className="font-kalameB">آرین شوقی</h1>
+          <h2 className="font-kalameB opacity-50">سرپرست سایت</h2>
         </div>
       </div>
       <div className="flex flex-row gap-6 h-10 items-center">

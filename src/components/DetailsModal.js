@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-export default function DetailsModal({ onHide }) {
+export default function DetailsModal({ onHide, children }) {
   useEffect(() => {
     const checkKey = (e) => {
       if (e.keyCode === 27) {
@@ -12,22 +12,7 @@ export default function DetailsModal({ onHide }) {
   });
   return (
     <div className="modal-parent active">
-      <table className="cms-table">
-        <thead>
-          <tr>
-            <th>اسم</th>
-            <th>قیمت</th>
-            <th>محبوبیت</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>لبتاب</td>
-            <td>12.000.000 تومان</td>
-            <td>91%</td>
-          </tr>
-        </tbody>
-      </table>
+      {children}
     </div>
   );
 }
