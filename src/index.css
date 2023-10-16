@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./reset.css";
+@font-face {
+  font-family: "kalame";
+  src: url("./fonts/Kalameh_Bold.ttf");
+}
+@font-face {
+  font-family: "kalameB";
+  src: url("./fonts/Kalameh_Black.ttf");
+}
+
+@layer base {
+  body {
+    @apply bg-white-50 flex flex-1 flex-row;
+  }
+  *,
+  body,
+  html {
+    @apply font-kalame;
+  }
+  *,
+  body,
+  html {
+    outline: none;
+  }
+  .Sidebara {
+    @apply w-full text-white flex justify-start items-center text-base;
+  }
+
+  .Sidebarli {
+    @apply relative p-5;
+  }
+
+  .Bo {
+    border-bottom: 2px solid #6c48bb;
+  }
+  .divInputProduct {
+    @apply flex items-center bg-white-50 w-full gap-2 h-10 rounded-xl pr-3;
+  }
+  .inputProduct {
+    @apply w-full h-10 rounded-xl bg-white-50 pr-2;
+  }
+  .cms-table {
+    @apply w-[380px] rounded-2xl bg-white;
+  }
+  .cms-table tr {
+    @apply text-center;
+  }
+  .cms-table td,
+  .cms-table th {
+    @apply p-5;
+  }
+}
+
+body {
+  direction: rtl;
+}
+/* for deletemodal component */
+.modal-parent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+}
+
+.modal-parent.active {
+  opacity: 1;
+  visibility: visible;
+}

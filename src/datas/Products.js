@@ -1,0 +1,51 @@
+export const productsData = [
+  {
+    id: 1,
+    tite: "صابون گلنار",
+    price: 64000,
+    count: 182,
+    img: "img/oil.jpg",
+  },
+  {
+    id: 2,
+    tite: "هندزفری بلوتوثی",
+    price: 90000,
+    count: 20,
+    img: "img/oil.jpg",
+  },
+  {
+    id: 3,
+    tite: "هدست مخصوص بازی",
+    price: 120000,
+    count: 11,
+    img: "img/oil.jpg",
+  },
+  {
+    id: 4,
+    tite: "روغن اویلا",
+    price: 48000,
+    count: 43,
+    img: "img/oil.jpg",
+  },
+  {
+    id: 5,
+    tite: "مانیتور گیمینگ",
+    price: 235000000,
+    count: 4,
+    img: "img/oil.jpg",
+  },
+  {
+    id: 6,
+    tite: "گوشی ایفون 13 پرو",
+    price: 53_000_000,
+    count: 3,
+    img: "img/oil.jpg",
+  },
+  {
+    id: 7,
+    tite: "کابل شارژر",
+    price: 35000,
+    count: 58,
+    img: "img/oil.jpg",
+  },
+];
