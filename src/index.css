@@ -52,6 +52,19 @@
   .cms-table th {
     @apply p-5;
   }
+  .cms-table-comments {
+    @apply w-full rounded-2xl bg-white;
+  }
+  .cms-table-comments tr {
+    @apply text-center;
+  }
+  .cms-table-comments td,
+  .cms-table-comments th {
+    @apply py-5 px-3;
+  }
+  .buttonPrimry{
+    @apply bg-blum-100 rounded-xl px-3 text-white text-lg hover:bg-blum-200
+  }
 }
 
 body {
